@@ -72,8 +72,8 @@ public class CarControllerRacing : MonoBehaviour
 		
 		if(isNitro&& !isBreaking && nitro > 0)
 		{
-			frontLeftWheelCollider.motorTorque = verticalInput * motorForce * 1000f;
-			frontRightWheelCollider.motorTorque = verticalInput * motorForce * 1000f;
+			frontLeftWheelCollider.motorTorque = verticalInput * motorForce * 2000f;
+			frontRightWheelCollider.motorTorque = verticalInput * motorForce * 2000f;
 			nitro = nitro - 0.5f;
 		}
 		else if(!isNitro && nitro <= 99.9)
@@ -81,7 +81,7 @@ public class CarControllerRacing : MonoBehaviour
 			nitro = nitro + 0.01f;
 		}
 		
-		kmh = _rb.velocity.magnitude*3.6f;
+		kmh = _rb.velocity.magnitude*3.6f * 1.5f;
 		
 	}
 	
