@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,8 +24,8 @@ public class Countdown : MonoBehaviour
     public GameObject WRInput;
     public GameObject WRSubmit;
     public GameObject newWRLabel;
-	
-	private Music music;
+     
+    private Music music;
     
     public static WorldRecord WR = new WorldRecord("no Internet Connection", 00,00,0);
 	
@@ -44,8 +44,8 @@ public class Countdown : MonoBehaviour
 		 
 	    RecordObject Rec = new RecordObject(username,min,sec,milli);
 		RestClient.Put("https://tamischesummerfetzn.firebaseio.com/track1.json", Rec);*/
-        
-		WRInput.SetActive(false);
+	        
+	WRInput.SetActive(false);
     	WRSubmit.SetActive(false);
         newWRLabel.SetActive(false);
         	
