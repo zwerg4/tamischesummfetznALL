@@ -13,6 +13,6 @@ public class Play : MonoBehaviour
 	
 	public void PlayTrack1()
     {
-		SceneManager.LoadScene("Track_Helloween");
+		SceneManager.LoadScene("Track_Easter");
     }
 }

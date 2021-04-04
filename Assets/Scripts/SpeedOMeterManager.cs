@@ -14,7 +14,9 @@ public class SpeedOMeterManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      SpeedLabel.GetComponent<Text>().text = "" + (uint) Car.GetComponent<CarControllerRacing>().kmh + " km/h";// WheelVehicle.Speed.get;
-      BoostLabel.GetComponent<Text>().text = "" + (int)((float) Car.GetComponent<CarControllerRacing>().nitro) + "%";// WheelVehicle.Speed.get;
+      SpeedLabel.GetComponent<Text>().text = "" + (uint) Car.GetComponent<VehicleControl>().speed + " km/h";// WheelVehicle.Speed.get;
+      BoostLabel.GetComponent<Text>().text = "" + (int)((float) Car.GetComponent<VehicleControl>().powerShift) + "%";// WheelVehicle.Speed.get;
+      
+
     }
 }

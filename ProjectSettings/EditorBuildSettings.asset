@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: 6fd866a264c7a7d499e7304fdb513836
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Track_Helloween.unity
     guid: 5137c53c29c206549ba2fdf8fd2b8f76
+  - enabled: 1
+    path: Assets/Scenes/Track_Easter.unity
+    guid: 1c94f3ee75f1241c2b5e917602020365
   m_configObjects: {}

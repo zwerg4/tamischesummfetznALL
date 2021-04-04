@@ -45,7 +45,7 @@ public class Countdown : MonoBehaviour
 	    RecordObject Rec = new RecordObject(username,min,sec,milli);
 		RestClient.Put("https://tamischesummerfetzn.firebaseio.com/track1.json", Rec);*/
 	        
-	WRInput.SetActive(false);
+	    WRInput.SetActive(false);
     	WRSubmit.SetActive(false);
         newWRLabel.SetActive(false);
         	
@@ -98,12 +98,12 @@ public class Countdown : MonoBehaviour
     	SchrankeZU.SetActive(false);
     	SchrankeOFFEN.SetActive(true);
 		LapTimeManager.SetActive(true);
-		inGameMusic.Play();
+	//	inGameMusic.Play();
     }
     
     void checkWR()
     {
-        RestClient.Get<RecordObject>("https://tamischesummerfetzn.firebaseio.com/trackHalloween.json").Then(response =>
+        RestClient.Get<RecordObject>("https://tamischesummerfetzn.firebaseio.com/trackEaster.json").Then(response =>
         {
         Rec = response;
         WRUserLabel.GetComponent<Text>().text = "" + Rec.username[0];

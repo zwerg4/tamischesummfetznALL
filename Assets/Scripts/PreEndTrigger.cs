@@ -10,8 +10,8 @@ public class PreEndTrigger : MonoBehaviour
 
     void OnTriggerEnter()
     {
-    	 Debug.Log("PreEnd Trigger passed");
-	 PreEndTrigg.SetActive(false);
-     	 EndTrigg.SetActive(true);
+        Debug.Log("PreEnd Trigger passed");
+	    PreEndTrigg.SetActive(false);
+        EndTrigg.SetActive(true);
     }
 }

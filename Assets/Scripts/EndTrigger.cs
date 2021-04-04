@@ -44,7 +44,7 @@ public class EndTrigger : MonoBehaviour
 		RecordObject loop_wr = new RecordObject(new [] {"loop","loop","loop","loop","loop","loop","loop","loop","loop","loop"}, new [] {9,9,9,9,9,9,9,9,9,9},new [] {9,9,9,9,9,9,9,9,9,9},new [] {9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f});
 		
 		
-		RestClient.Get<RecordObject>("https://tamischesummerfetzn.firebaseio.com/trackHalloween.json").Then(response =>
+		RestClient.Get<RecordObject>("https://tamischesummerfetzn.firebaseio.com/trackEaster.json").Then(response =>
 		{
 			Debug.Log("INSIDE RESTCLIENT, response best: " + response.username[0] + " / " + response.min[0] + " / " + response.sec[0] + " / " + response.milli[0]);
 			loop_wr = response;
@@ -143,7 +143,7 @@ public class EndTrigger : MonoBehaviour
        // RestClient.Put("https://tamischesummerfetzn.firebaseio.com/"+place+".json", Countdown.WR);
 	   
 	   Countdown.Rec.username[place-1] = WRInput.GetComponent<Text>().text;
-	   RestClient.Put("https://tamischesummerfetzn.firebaseio.com/trackHalloween.json", Countdown.Rec);
+	   RestClient.Put("https://tamischesummerfetzn.firebaseio.com/trackEaster.json", Countdown.Rec);
 
 		WRInput.SetActive(false);
      	WRSubmit.SetActive(false);

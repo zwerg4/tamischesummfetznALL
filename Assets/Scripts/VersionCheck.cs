@@ -7,7 +7,7 @@ using Proyecto26;
 
 public class VersionCheck : MonoBehaviour
 {
-	public static string VersionNR = "2.01";
+	public static string VersionNR = "3.01";
     public GameObject VersionDisplay;
 	public GameObject newVersionPanel;
 	

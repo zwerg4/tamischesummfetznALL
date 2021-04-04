@@ -45,7 +45,7 @@ public class Leaderboard : MonoBehaviour
 		RecordObject Rec = new RecordObject(new [] {"no internet connection"}, new [] {9,9,9,9,9,9,9,9,9,9},new [] {9,9,9,9,9,9,9,9,9,9},new [] {9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f,9.9f});
 
 
-		RestClient.Get<RecordObject>("https://tamischesummerfetzn.firebaseio.com/trackHalloween.json").Then(response =>
+		RestClient.Get<RecordObject>("https://tamischesummerfetzn.firebaseio.com/trackEaster.json").Then(response =>
 		{
 		Debug.Log("INSIDE RESTCLIENT, Leaderboard best: " + response.username[0] + " / " + response.min[0] + " / " + response.sec[0] + " / " + response.milli[0]);
 		Rec = response;
