@@ -8584,7 +8584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 1e3e709dd73e44966a397946ad9a6be4, type: 3}
+  m_Texture: {fileID: 2800000, guid: 2bdfb201fe1754fdd9517d4f3fb34017, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -12412,7 +12412,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 71.1
+  field of view: 63.2
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -13603,7 +13603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75f76940a13c54449ca8f04c102ee4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicSource: {fileID: 1971642266}
+  MusicSource: {fileID: 0}
   RawImage: {fileID: 1264328889}
   muteTexture: {fileID: 2800000, guid: b060a661f9e04104cab63a77d5934cde, type: 3}
   unmuteTexture: {fileID: 2800000, guid: 03eb6d86f310af84e83f6f9581919efb, type: 3}
