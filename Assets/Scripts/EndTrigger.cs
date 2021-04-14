@@ -20,7 +20,9 @@ public class EndTrigger : MonoBehaviour
     public GameObject WRSubmit;
     public GameObject newWRLabel;
 
-    private int newWRmin;
+	public GameObject GhostManager;
+
+	private int newWRmin;
     private int newWRsec;
     private float newWRmilli;
 	
@@ -36,6 +38,7 @@ public class EndTrigger : MonoBehaviour
     	Debug.Log("End Trigger passed with: " + LapTimeManager.MinuteCount + ":" + LapTimeManager.SecondCount + "." + LapTimeManager.MilliCount);
     	EndTrigg.SetActive(false);
 
+		GhostManager.GetComponent<GhostManager>().Stop();
 
 		newWRLabel.GetComponent<Text>().text = LapTimeManager.MinuteCount + ":" + LapTimeManager.SecondCount + "." + (int) LapTimeManager.MilliCount + "\nToo slow, press Restart";
 		newWRLabel.SetActive(true);

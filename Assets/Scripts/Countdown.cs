@@ -19,8 +19,9 @@ public class Countdown : MonoBehaviour
     public GameObject WRsec;
     public GameObject WRmilli;
 	public GameObject LapTimeManager;
-    
-    
+    public GameObject GhostManager;
+
+
     public GameObject WRInput;
     public GameObject WRSubmit;
     public GameObject newWRLabel;
@@ -78,7 +79,7 @@ public class Countdown : MonoBehaviour
     
     IEnumerator CountStart()
     {
-    	yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.5f);
     	Countdown_.GetComponent<Text> ().text = "3";
     	getReady.Play();
     	Countdown_.SetActive(true);
@@ -98,7 +99,8 @@ public class Countdown : MonoBehaviour
     	SchrankeZU.SetActive(false);
     	SchrankeOFFEN.SetActive(true);
 		LapTimeManager.SetActive(true);
-	//	inGameMusic.Play();
+        //GhostManager.SetActive(true);
+        //	inGameMusic.Play();
     }
     
     void checkWR()
